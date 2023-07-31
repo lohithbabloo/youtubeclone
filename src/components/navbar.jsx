@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiMenu } from "react-icons/Fi";
-const Navbar = () => {
+const Navbar = ({ openCloseFunc }) => {
+  const [open, setOpen] = useState(false);
+  const openClose = () => {
+    setOpen(!open);
+    openCloseFunc(open);
+  };
   return (
     <div className="flex justify-between p-2 items-center text-center">
       <div className="flex justify-start gap-[20px] items-center ml-3">
-        <div className="cursor-pointer">
+        <button onClick={() => openClose()}>
           <FiMenu className="text-white text-2xl" />
-        </div>
+        </button>
         <div className="flex text-center items-center gap-1">
           <a href="#">
             <img src="/public/youtube.png" className="w-[35px]" />
