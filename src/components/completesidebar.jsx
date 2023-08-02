@@ -1,6 +1,6 @@
 import React from "react";
-
-const completesidebar = () => {
+import { GoHome } from "react-icons/go";
+const Completesidebar = () => {
   return (
     <div>
       <GoHome className="text-white w-6 h-6" />
@@ -8,4 +8,4 @@ const completesidebar = () => {
   );
 };
 
-export default completesidebar;
+export default Completesidebar;

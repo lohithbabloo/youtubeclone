@@ -7,14 +7,14 @@ const Navbar = ({ openCloseFunc }) => {
     openCloseFunc(open);
   };
   return (
-    <div className="flex justify-between p-2 items-center text-center">
-      <div className="flex justify-start gap-[20px] items-center ml-3">
+    <div className="flex justify-between items-center text-center p-3 ml-3">
+      <div className="flex justify-start gap-[20px] items-center">
         <button onClick={() => openClose()}>
           <FiMenu className="text-white text-2xl" />
         </button>
         <div className="flex text-center items-center gap-1">
           <a href="#">
-            <img src="/public/youtube.png" className="w-[35px]" />
+            <img src="/youtube.png" className="w-[35px]" />
           </a>
           <a href="#" className="text-xl">
             <p className="text-white font-semibold">YouTube</p>
@@ -31,7 +31,7 @@ const Navbar = ({ openCloseFunc }) => {
           <div className="hover-element group relative">
             <button className="rounded-tr-3xl rounded-br-3xl bg-stone-400 p-[5px]">
               <img
-                src="/public/magnifying-glass.png"
+                src="/magnifying-glass.png"
                 width={28}
                 height={28}
                 className="mr-3 ml-3 "
@@ -45,7 +45,7 @@ const Navbar = ({ openCloseFunc }) => {
         <div className="hover-element group relative">
           <button className="border p-2 rounded-full bg-stone-400 cursor-pointer">
             <img
-              src="/public/microphone-black-shape.png"
+              src="/microphone-black-shape.png"
               className="w-5 h-5 cursor-pointer"
             />
           </button>
@@ -57,7 +57,7 @@ const Navbar = ({ openCloseFunc }) => {
       <div className="flex justify-evenly w-[200px]">
         <div className="hover-element group relative">
           <button className="hover:bg-stone-400 p-2 rounded-full">
-            <img src="/public/video.png" className=" w-7 h-7"></img>
+            <img src="/video.png" className=" w-7 h-7"></img>
           </button>
           <div className="absolute top-[50px] opacity-0 group-hover:opacity-100 transistion-opacity duration-300 pointer-events-none">
             <span className="text-white">Create</span>
@@ -65,14 +65,14 @@ const Navbar = ({ openCloseFunc }) => {
         </div>
         <div className="hover-element group relative">
           <button className="hover:bg-stone-400 p-2 rounded-full ">
-            <img src="/public/notification.png" className=" w-7 h-7"></img>
+            <img src="/notification.png" className=" w-7 h-7"></img>
           </button>
           <div className="absolute top-[50px] opacity-0 group-hover:opacity-100 transistion-opacity duration-300 pointer-events-none">
             <span className="text-white">Notifications</span>
           </div>
         </div>
         <button>
-          <img src="/public/user.png" className=" w-7 h-7"></img>
+          <img src="/user.png" className=" w-7 h-7"></img>
         </button>
       </div>
     </div>
