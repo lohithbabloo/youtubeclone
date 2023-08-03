@@ -5,19 +5,21 @@ import { useState } from "react";
 import Videosection from "./components/videosection";
 
 function App() {
-  const [menuInput, setMenuInput] = useState(true);
+  const [menuInput, setMenuInput] = useState(false);
   const openClose = (value) => {
     setMenuInput(value);
-    console.log(value);
   };
+
   return (
-    <>
+    <div className="">
       <Navbar openCloseFunc={openClose} />
       <div className="flex">
-        {menuInput ? <Sidebar /> : <Completesidebar />}
-        <Videosection />
+        <div>{menuInput ? <Sidebar /> : <Completesidebar />}</div>
+        <div>
+          <Videosection />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

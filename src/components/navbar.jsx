@@ -7,16 +7,16 @@ const Navbar = ({ openCloseFunc }) => {
     openCloseFunc(open);
   };
   return (
-    <div className="flex justify-between items-center text-center p-3 ml-3">
+    <div className="sticky top-0 flex justify-between items-center text-center p-6 bg-black">
       <div className="flex justify-start gap-[20px] items-center">
         <button onClick={() => openClose()}>
           <FiMenu className="text-white text-2xl" />
         </button>
         <div className="flex text-center items-center gap-1">
-          <a href="#">
+          <a href="https://www.youtube.com/">
             <img src="/youtube.png" className="w-[35px]" />
           </a>
-          <a href="#" className="text-xl">
+          <a href="https://www.youtube.com/" className="text-xl">
             <p className="text-white font-semibold">YouTube</p>
           </a>
         </div>
@@ -26,10 +26,10 @@ const Navbar = ({ openCloseFunc }) => {
           <input
             type="text"
             placeholder="Search"
-            className="w-[500px] p-[6px] pl-[15px] rounded-tl-3xl rounded-bl-3xl bg-black border border-gray-400 text-white focus:outline"
+            className="w-[500px] p-[6px] pl-[15px] rounded-tl-3xl rounded-bl-3xl bg-black border border-zinc-700 text-white focus:outline"
           />
           <div className="hover-element group relative">
-            <button className="rounded-tr-3xl rounded-br-3xl bg-stone-400 p-[5px]">
+            <button className="rounded-tr-3xl rounded-br-3xl bg-zinc-700 p-[5px]">
               <img
                 src="/magnifying-glass.png"
                 width={28}
@@ -43,10 +43,10 @@ const Navbar = ({ openCloseFunc }) => {
           </div>
         </div>
         <div className="hover-element group relative">
-          <button className="border p-2 rounded-full bg-stone-400 cursor-pointer">
+          <button className="p-2 rounded-full bg-zinc-700">
             <img
               src="/microphone-black-shape.png"
-              className="w-5 h-5 cursor-pointer"
+              className="w-[22px] h-[22px] cursor-pointer"
             />
           </button>
           <div className="absolute top-[50px] w-[200px] text-left transition duration-300 opacity-0 group-hover:opacity-100 pointer-events-none">
@@ -56,7 +56,7 @@ const Navbar = ({ openCloseFunc }) => {
       </div>
       <div className="flex justify-evenly w-[200px]">
         <div className="hover-element group relative">
-          <button className="hover:bg-stone-400 p-2 rounded-full">
+          <button className="hover:bg-zinc-700 p-2 rounded-full">
             <img src="/video.png" className=" w-7 h-7"></img>
           </button>
           <div className="absolute top-[50px] opacity-0 group-hover:opacity-100 transistion-opacity duration-300 pointer-events-none">
@@ -64,7 +64,7 @@ const Navbar = ({ openCloseFunc }) => {
           </div>
         </div>
         <div className="hover-element group relative">
-          <button className="hover:bg-stone-400 p-2 rounded-full ">
+          <button className="hover:bg-zinc-700 p-2 rounded-full ">
             <img src="/notification.png" className=" w-7 h-7"></img>
           </button>
           <div className="absolute top-[50px] opacity-0 group-hover:opacity-100 transistion-opacity duration-300 pointer-events-none">

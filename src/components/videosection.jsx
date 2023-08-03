@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Videosection = () => {
-  return <div className="text-white">HEllo</div>;
+  return <div className="text-white"></div>;
 };
 
 export default Videosection;
